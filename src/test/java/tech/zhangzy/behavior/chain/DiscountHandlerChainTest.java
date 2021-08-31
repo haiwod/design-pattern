@@ -25,8 +25,8 @@ class DiscountHandlerChainTest {
     @Test
     void handler() {
         DiscountContext context = new DiscountContext();
-        List<Integer> coupons = Arrays.asList(2);
-        context.setCoupons(coupons);
+        //三折优惠
+        context.setCouponType(1);
         handlerChain.handler(context);
     }
 }

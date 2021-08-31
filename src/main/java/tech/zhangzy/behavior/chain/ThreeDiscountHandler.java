@@ -3,8 +3,6 @@ package tech.zhangzy.behavior.chain;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
-
 /**
  * 三折优惠券处理器
  *
@@ -17,8 +15,7 @@ public class ThreeDiscountHandler extends DiscountHandler {
 
     @Override
     protected Boolean execute(DiscountContext context) {
-        List<Integer> coupons = context.getCoupons();
-        if(coupons.contains(2)){
+        if(context.getCouponType() == 1){
             log.info("----三折优惠---");
             return Boolean.TRUE;
         }

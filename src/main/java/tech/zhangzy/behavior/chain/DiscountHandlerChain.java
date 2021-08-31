@@ -13,6 +13,9 @@ import java.util.List;
  */
 @Component
 public class DiscountHandlerChain {
+    /**
+     * 优惠券处理器链
+     */
     @Resource
     private List<DiscountHandler> discountHandlers;
 
