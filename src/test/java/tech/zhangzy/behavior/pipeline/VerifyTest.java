@@ -10,6 +10,7 @@ import tech.zhangzy.behavior.pipeline.context.VerifyContext;
 import tech.zhangzy.behavior.pipeline.executor.AbstractVerifyExecutor;
 
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -22,17 +23,21 @@ import java.util.List;
 @Slf4j
 class VerifyTest {
     @Autowired
-    List<AbstractVerifyExecutor<? extends VerifyContext>> verifyChain;
+    Map<VerifyEventEnum, List<AbstractVerifyExecutor>> verifyEventChainMap;
 
     @Test
     void test() {
         VerifyContext context = new IdentityContext();
         context.setUserId("20210901001");
-        verifyChain.stream().forEach(item ->
-                log.info(item.getVerifyType().getDesc())
-        );
-        for (AbstractVerifyExecutor verifyExecutor : verifyChain) {
-            verifyExecutor.verify(context);
-        }
+        //校验下单事件风控
+        log.info("----------下单风控开始---------");
+        List<AbstractVerifyExecutor> orderVerifyChain = verifyEventChainMap.get(VerifyEventEnum.ORDER);
+        orderVerifyChain.forEach(executor -> executor.verify(context));
+        log.info("----------下单风控结束---------");
+        //校验登录事件风控
+        log.info("----------登录风控开始---------");
+        List<AbstractVerifyExecutor> loginVerifyChain = verifyEventChainMap.get(VerifyEventEnum.LOGIN);
+        loginVerifyChain.forEach(executor -> executor.verify(context));
+        log.info("----------登录风控结束---------");
     }
 }

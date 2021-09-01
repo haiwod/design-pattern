@@ -8,14 +8,14 @@ import tech.zhangzy.behavior.pipeline.context.VerifyContext;
  * @author : zhiyi.zhang@joymo.tech
  * @date : 2021/9/1
  */
-public interface AbstractVerifyExecutor<T extends VerifyContext> {
+public interface AbstractVerifyExecutor {
 
     /**
      * 风控校验方法
      *
      * @param context
      */
-    void verify(T context);
+    void verify(VerifyContext context);
 
     /**
      * 风控类型

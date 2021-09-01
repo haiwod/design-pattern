@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * 校验类型枚举
+ * 风控类型枚举
  *
  * @author : zhiyi.zhang@joymo.tech
  * @date : 2021/9/1

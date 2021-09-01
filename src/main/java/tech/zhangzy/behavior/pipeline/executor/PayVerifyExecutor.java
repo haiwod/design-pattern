@@ -3,6 +3,7 @@ package tech.zhangzy.behavior.pipeline.executor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import tech.zhangzy.behavior.pipeline.context.IdentityContext;
+import tech.zhangzy.behavior.pipeline.context.VerifyContext;
 
 /**
  * 支付校验
@@ -12,9 +13,9 @@ import tech.zhangzy.behavior.pipeline.context.IdentityContext;
  */
 @Slf4j
 @Component
-public class PayVerifyExecutor implements AbstractVerifyExecutor<IdentityContext> {
+public class PayVerifyExecutor implements AbstractVerifyExecutor {
     @Override
-    public void verify(IdentityContext context) {
+    public void verify(VerifyContext context) {
         log.info("-------支付校验通过-------");
     }
 
