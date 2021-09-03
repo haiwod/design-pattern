@@ -11,5 +11,10 @@ import tech.zhangzy.behavior.chain.DiscountContext;
  */
 public interface DiscountHandler {
 
-    Boolean execute(DiscountContext context);
+    /**
+     * 优惠券处理
+     * @param context
+     * @return
+     */
+    boolean execute(DiscountContext context);
 }

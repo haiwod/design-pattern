@@ -3,6 +3,7 @@ package tech.zhangzy.behavior.chain.handler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import tech.zhangzy.behavior.chain.DiscountContext;
+import tech.zhangzy.behavior.chain.DiscountTypeEnum;
 
 /**
  * 三折优惠券处理器
@@ -15,11 +16,11 @@ import tech.zhangzy.behavior.chain.DiscountContext;
 public class ThreeDiscountHandler implements DiscountHandler {
 
     @Override
-    public Boolean execute(DiscountContext context) {
-        if(context.getCouponType() == 1){
+    public boolean execute(DiscountContext context) {
+        if (DiscountTypeEnum.THREE_DISCOUNT.getVal().equals(context.getCouponType())) {
             log.info("----三折优惠---");
-            return Boolean.TRUE;
+            return true;
         }
-        return Boolean.FALSE;
+        return false;
     }
 }
