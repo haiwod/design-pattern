@@ -3,7 +3,6 @@ package tech.zhangzy.behavior.pipeline;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import tech.zhangzy.behavior.pipeline.context.VerifyContext;
 import tech.zhangzy.behavior.pipeline.executor.AbstractVerifyExecutor;
 import tech.zhangzy.behavior.pipeline.executor.VerifyTypeEnum;
 
