@@ -1,9 +1,6 @@
 package tech.zhangzy.construction.proxy.aop;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * API监控注解
@@ -13,6 +10,7 @@ import java.lang.annotation.Target;
  */
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
+@Documented
 public @interface ApiMonitor {
 
     /**
@@ -21,20 +19,20 @@ public @interface ApiMonitor {
     boolean isWarn() default true;
 
     /**
-     * 日志持久化数据库（异步写入）
+     * 告警错误落库（异步写入）
      */
     boolean isSaveDB() default false;
 
     /**
      * API执行时长阈值，超过就告警（毫秒）
      */
-    int execTime() default 5000;
+    int timeout() default 2000;
 
     /**
      * 告警类型
      *
      * @see WarnNotifyEnum
      */
-    WarnNotifyEnum warnType() default WarnNotifyEnum.MAIL;
+    WarnNotifyEnum[] warnType() default WarnNotifyEnum.MAIL;
 
 }
