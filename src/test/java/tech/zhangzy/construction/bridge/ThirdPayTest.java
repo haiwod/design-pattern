@@ -2,10 +2,6 @@ package tech.zhangzy.construction.bridge;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import tech.zhangzy.Application;
-import tech.zhangzy.construction.proxy.aop.OrderService;
 
 /**
  * 桥梁模式测试
@@ -13,7 +9,6 @@ import tech.zhangzy.construction.proxy.aop.OrderService;
  * @author : zhiyi.zhang@joymo.tech
  * @date : 2021/9/6
  */
-@SpringBootTest(classes = Application.class)
 @Slf4j
 class ThirdPayTest {
 

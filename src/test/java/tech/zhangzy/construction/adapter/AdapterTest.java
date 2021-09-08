@@ -2,9 +2,6 @@ package tech.zhangzy.construction.adapter;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-import tech.zhangzy.Application;
-import tech.zhangzy.construction.adapter.api.WxService;
 import tech.zhangzy.construction.adapter.api.WxServiceAdapter;
 import tech.zhangzy.construction.adapter.clazz.WxAppLoginService;
 import tech.zhangzy.construction.adapter.clazz.WxAppLoginServiceAdapter;
@@ -12,7 +9,6 @@ import tech.zhangzy.construction.adapter.obj.ICommentService;
 import tech.zhangzy.construction.adapter.obj.MeituanCommentServiceAdapter;
 import tech.zhangzy.construction.adapter.obj.MeituanCommentServiceImpl;
 import tech.zhangzy.construction.adapter.obj.QueryCommentListParam;
-import tech.zhangzy.construction.bridge.*;
 
 /**
  * 适配器模式测试
@@ -20,7 +16,6 @@ import tech.zhangzy.construction.bridge.*;
  * @author : zhiyi.zhang@joymo.tech
  * @date : 2021/9/6
  */
-@SpringBootTest(classes = Application.class)
 @Slf4j
 class AdapterTest {
 

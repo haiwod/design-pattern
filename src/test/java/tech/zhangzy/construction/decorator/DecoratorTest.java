@@ -2,9 +2,6 @@ package tech.zhangzy.construction.decorator;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-import tech.zhangzy.Application;
-import tech.zhangzy.construction.bridge.*;
 
 /**
  * 装饰器模式测试
@@ -12,7 +9,6 @@ import tech.zhangzy.construction.bridge.*;
  * @author : zhiyi.zhang@joymo.tech
  * @date : 2021/9/6
  */
-@SpringBootTest(classes = Application.class)
 @Slf4j
 class DecoratorTest {
 

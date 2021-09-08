@@ -2,11 +2,6 @@ package tech.zhangzy.construction.proxy.cglib;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-import tech.zhangzy.Application;
-import tech.zhangzy.construction.proxy.jdk.IUserRegister;
-import tech.zhangzy.construction.proxy.jdk.UserRegisterImpl;
-import tech.zhangzy.construction.proxy.jdk.UserVerifyHandler;
 
 /**
  * cglib动态代理
@@ -14,7 +9,6 @@ import tech.zhangzy.construction.proxy.jdk.UserVerifyHandler;
  * @author : zhiyi.zhang@joymo.tech
  * @date : 2021/9/6
  */
-@SpringBootTest(classes = Application.class)
 @Slf4j
 class CglibProxyTest {
 
