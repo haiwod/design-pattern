@@ -1,7 +1,6 @@
 /**
- * 代理模式（静态和动态），对方法进行增强
- * AspectJ编译时织入字节码，性能高
- * Spring aop中的jdk proxy和cglib都是运行时增强，性能较低
- * 场景：spring中aop的应用
+ * JDK动态代理，底层用反射，只能增强有接口的实现类
+ * 1.6时JDK动态代理性能比cglib差；1.8后JDK动态代理性能得到提升，比cglib高
+ *
  */
 package tech.zhangzy.construction.proxy.jdk;
