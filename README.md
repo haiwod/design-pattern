@@ -30,15 +30,15 @@
 
 ### 装饰器模式
 
-测试类：` tech.zhangzy.construction.decorator.DecoratorTest`
+测试类：`tech.zhangzy.construction.decorator.DecoratorTest`
 
 ### 外观模式
 
-测试类：` tech.zhangzy.construction.facade.FacadeTest`
+测试类：`tech.zhangzy.construction.facade.FacadeTest`
 
 ### 代理模式
 
-AOP案例测试类：` tech.zhangzy.construction.proxy.aop.OrderServiceTest`
+AOP案例测试类：`tech.zhangzy.construction.proxy.aop.OrderServiceTest`
 
 JDK动态代理测试类：`tech.zhangzy.construction.proxy.jdk.JDKProxyTest`
 
@@ -56,19 +56,19 @@ CGLIB动态代理测试类：`tech.zhangzy.construction.proxy.cglib.CglibProxyTe
 
 ### 责任链模式
 
-测试类：` tech.zhangzy.behavior.chain.DiscountHandlerChainTest`
+测试类：`tech.zhangzy.behavior.chain.DiscountHandlerChainTest`
 
 ### 管道模式（责任链变种）
 
-测试类：` tech.zhangzy.behavior.pipeline.VerifyTest`
+测试类：`tech.zhangzy.behavior.pipeline.VerifyTest`
 
 ### 策略模式
 
-测试类：` tech.zhangzy.behavior.strategy.LoginContextTest`
+测试类：`tech.zhangzy.behavior.strategy.LoginContextTest`
 
 ### 模板模式
 
-测试类：` tech.zhangzy.behavior.template.TicketCallbackTest`
+测试类：`tech.zhangzy.behavior.template.TicketCallbackTest`
 
 ### 命令模式
 
@@ -80,7 +80,7 @@ CGLIB动态代理测试类：`tech.zhangzy.construction.proxy.cglib.CglibProxyTe
 
 ### 状态模式
 
-暂无
+测试类：`tech.zhangzy.behavior.status.OrderStatusTest`
 
 ### 迭代器模式
 
