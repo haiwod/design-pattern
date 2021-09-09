@@ -3,6 +3,8 @@ package tech.zhangzy.behavior.status;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import java.util.Arrays;
+
 /**
  * 订单状态枚举
  *
@@ -27,13 +29,19 @@ public enum OrderStatusEnum {
     /**
      * 制作中
      */
-    PRODUCING(4,"后台制作"),
+    PRODUCING(4, "后台制作"),
     /**
      * 订单结束
      */
-    END_ORDER(5,"订单结束");
+    END_ORDER(5, "订单结束");
 
     private Integer val;
 
     private String desc;
+
+    public static OrderStatusEnum getOrderStatusEnum(Integer val) {
+        return Arrays.stream(OrderStatusEnum.values()).filter(type -> type.getVal().equals(val)).findFirst().orElseThrow(
+                () -> new RuntimeException("枚举值映射错误")
+        );
+    }
 }

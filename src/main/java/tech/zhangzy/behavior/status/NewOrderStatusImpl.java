@@ -4,7 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 /**
- * 新建订单状态处理
+ * 新建订单状态处理（只列一种状态实现，其余状态类似）
  *
  * @author : zhiyi.zhang@joymo.tech
  * @date : 2021/9/9

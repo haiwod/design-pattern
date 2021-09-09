@@ -36,6 +36,25 @@ public class OrderContext implements InitializingBean, ApplicationContextAware {
         });
     }
 
+    public void newOrder(String orderNo, OrderStatusEnum currentStatus) {
+        ORDER_STATUS_SERVICE_MAP.get(currentStatus).newOrder(orderNo, currentStatus);
+    }
 
+    public void waitPay(String orderNo, OrderStatusEnum currentStatus) {
+        ORDER_STATUS_SERVICE_MAP.get(currentStatus).waitPay(orderNo, currentStatus);
+    }
+
+    public void payed(String orderNo, OrderStatusEnum currentStatus) {
+        ORDER_STATUS_SERVICE_MAP.get(currentStatus).payed(orderNo, currentStatus);
+
+    }
+
+    public void producing(String orderNo, OrderStatusEnum currentStatus) {
+        ORDER_STATUS_SERVICE_MAP.get(currentStatus).producing(orderNo, currentStatus);
+    }
+
+    public void endOrder(String orderNo, OrderStatusEnum currentStatus) {
+        ORDER_STATUS_SERVICE_MAP.get(currentStatus).endOrder(orderNo, currentStatus);
+    }
 
 }
