@@ -22,7 +22,11 @@ DCL懒加载：`tech.zhangzy.creation.singleton.LazySingleton`
 
 ### 原型模式
 
-暂无
+浅拷贝：实现Cloneable接口，重写clone方法
+
+深拷贝：利用序列化和反序列化实现深拷贝
+
+测试类：`tech.zhangzy.creation.prototype.PrototypeTest`
 
 ## 结构型
 
