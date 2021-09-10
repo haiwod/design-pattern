@@ -31,9 +31,13 @@ public enum OrderStatusEnum {
      */
     PRODUCING(4, "后台制作"),
     /**
-     * 订单结束
+     * 订单完成
      */
-    END_ORDER(5, "订单结束");
+    END_ORDER(5, "订单完成"),
+    /**
+     * 取消订单
+     */
+    CANCEL_ORDER(6, "订单取消");
 
     private Integer val;
 

@@ -28,7 +28,9 @@ class OrderStatusTest {
 
     @Test
     void test() {
-        //处理订单为新建状态
+        //当前状态的订单：新建，执行新建订单状态的逻辑
         orderContext.newOrder("20210909100",OrderStatusEnum.NEW_ORDER);
+        //当前状态的订单：新建，执行取消订单状态的逻辑
+        orderContext.cancelOrder("20210909101",OrderStatusEnum.NEW_ORDER);
     }
 }
