@@ -28,6 +28,12 @@ DCL懒加载：`tech.zhangzy.creation.singleton.LazySingleton`
 
 ### 适配器模式
 
+接口适配
+
+类适配
+
+对象适配
+
 测试类：`tech.zhangzy.construction.adapter.AdapterTest`
 
 ### 桥梁模式
@@ -78,7 +84,9 @@ CGLIB动态代理测试类：`tech.zhangzy.construction.proxy.cglib.CglibProxyTe
 
 ### 命令模式
 
-暂无
+角色：命令，接收者，发起者
+
+测试类：`tech.zhangzy.behavior.command.CommandTest`
 
 ### 观察者模式
 
