@@ -82,7 +82,7 @@ CGLIB动态代理测试类：`tech.zhangzy.construction.proxy.cglib.CglibProxyTe
 
 ### 观察者模式
 
-暂无
+测试类：`tech.zhangzy.behavior.observer.TopicMessageTest`
 
 ### 状态模式
 
