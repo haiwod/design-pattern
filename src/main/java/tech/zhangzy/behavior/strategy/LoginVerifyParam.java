@@ -12,6 +12,10 @@ import java.io.Serializable;
  */
 @Data
 public class LoginVerifyParam implements Serializable {
+    /**
+     * 登录类型
+     * @see LoginTypeEnum
+     */
     private Integer loginType;
 
     private String userName;

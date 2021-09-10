@@ -24,7 +24,7 @@ class DiscountHandlerChainTest {
     void handler() {
         DiscountContext context = new DiscountContext();
         //三折优惠
-        context.setCouponType(1);
+        context.setCouponType(DiscountTypeEnum.THREE_DISCOUNT.getVal());
         handlerChain.handler(context);
     }
 }

@@ -18,6 +18,7 @@ public class DiscountContext {
     /**
      * 优惠券类型 1、三折；2、满减
      *
+     * @see DiscountTypeEnum
      */
     private Integer couponType;
 }

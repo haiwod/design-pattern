@@ -22,7 +22,10 @@ public class CallbackParam implements Serializable {
     private String ticketContent;
 
     private String orderNo;
-
+    /**
+     * 工单类型
+     * @see TicketTypeEnum
+     */
     private Integer ticketType;
 
     private List<Map<String,String>> extendList;

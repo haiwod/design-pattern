@@ -21,7 +21,7 @@ public enum ServiceTypeEnum {
     /**
      * 会员服务
      */
-    CRM_MEMBER(2, "会员");
+    CRM_MEMBER(2, "会员服务");
 
 
     private Integer val;
