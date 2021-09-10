@@ -4,7 +4,13 @@
 
 ### 单例模式
 
-暂无
+饿汉式：`tech.zhangzy.creation.singleton.HungrySingleton`
+
+DCL懒加载：`tech.zhangzy.creation.singleton.LazySingleton`
+
+枚举单例：`tech.zhangzy.creation.singleton.SingletonEnum`
+
+静态内部类实现单例：`tech.zhangzy.creation.singleton.SingletonHolder`
 
 ### 工厂模式
 

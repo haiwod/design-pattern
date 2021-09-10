@@ -1,7 +1,7 @@
 package tech.zhangzy.creation.singleton;
 
 /**
- * 懒汉加载
+ * 懒汉加载（DCL）
  *
  * @author : zhiyi.zhang@joymo.tech
  * @date : 2021/7/13

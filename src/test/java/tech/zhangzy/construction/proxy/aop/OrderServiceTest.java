@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import tech.zhangzy.Application;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * API告警监控测试
