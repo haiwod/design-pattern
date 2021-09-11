@@ -1,7 +1,5 @@
 package tech.zhangzy.behavior.strategy;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

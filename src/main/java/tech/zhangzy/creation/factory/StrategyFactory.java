@@ -20,10 +20,10 @@ public class StrategyFactory<K, V extends Strategy<K>> implements InitializingBe
 
     private Map<K, V> strategyMap;
 
-    private Class<V> StrategyClazz;
+    private final Class<V> strategyClazz;
 
-    public StrategyFactory(Class<V> StrategyClazz) {
-        this.StrategyClazz = StrategyClazz;
+    public StrategyFactory(Class<V> strategyClazz) {
+        this.strategyClazz = strategyClazz;
     }
 
     /**
@@ -37,8 +37,8 @@ public class StrategyFactory<K, V extends Strategy<K>> implements InitializingBe
     }
 
     @Override
-    public void afterPropertiesSet() throws Exception {
-        Collection<V> strategyList = applicationContext.getBeansOfType(StrategyClazz).values();
+    public void afterPropertiesSet() {
+        Collection<V> strategyList = applicationContext.getBeansOfType(strategyClazz).values();
         strategyMap = new ConcurrentHashMap<>(strategyList.size());
         for (V strategy : strategyList) {
             strategyMap.put(strategy.getKey(), strategy);
