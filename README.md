@@ -14,13 +14,33 @@ DCL懒加载：`tech.zhangzy.creation.singleton.LazySingleton`
 
 ### 工厂模式
 
-暂无
+1. 简单工厂
+
+   抽象部分：产品
+
+   Spring中两种装载方式：
+
+   `tech.zhangzy.behavior.template.TicketCallbackHandlerFactory`
+
+   `tech.zhangzy.behavior.status.OrderContext`
+
+2. 工厂方法（一个工厂一个产品）
+
+   抽象：产品、工厂
+
+   产品抽象：`tech.zhangzy.creation.factory.Strategy`
+
+   工厂抽象：`tech.zhangzy.creation.factory.StrategyFactory`
+
+   工厂配置：`tech.zhangzy.creation.factory.FactoryConfig`
+
+3. 抽象工厂（产品族概念，工厂方法横向扩展，一个工厂多个产品）
 
 ### 建造者模式
 
 测试类：`tech.zhangzy.creation.builder.BuilderTest`
 
-## 原型模式
+### 原型模式
 
 浅拷贝：实现Cloneable接口，重写clone方法
 
