@@ -22,7 +22,7 @@ DCL懒加载：`tech.zhangzy.creation.singleton.LazySingleton`
 
    `tech.zhangzy.behavior.template.TicketCallbackHandlerFactory`
 
-   `tech.zhangzy.behavior.status.OrderContext`
+   `tech.zhangzy.behavior.state.OrderHandleContext`
 
 2. 工厂方法（一个工厂一个产品）
 
@@ -118,7 +118,7 @@ CGLIB动态代理测试类：`tech.zhangzy.construction.proxy.cglib.CglibProxyTe
 
 ### 状态模式
 
-测试类：`tech.zhangzy.behavior.status.OrderStatusTest`
+测试类：`tech.zhangzy.behavior.state.OrderStatusTest`
 
 ### 迭代器模式
 
